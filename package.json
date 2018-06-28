@@ -1,0 +1,13 @@
+{
+  "name": "sauko-amp",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-browser-sync": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-pug": "latest",
+    "grunt-contrib-watch": "latest",
+    "less-plugin-autoprefix": "latest",
+    "less-plugin-clean-css": "latest"
+  }
+}

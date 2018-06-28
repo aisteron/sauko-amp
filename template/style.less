@@ -1,0 +1,29 @@
+@green: #7ab55c;
+@red: #ff0101;
+.wrap
+{
+	header
+	{
+		.nav 
+		{
+			display:flex;
+			justify-content: space-around;
+			background-color: #f5f3f3;
+			height:42px;
+			position: fixed;
+
+			.site-name
+			{
+				text-transform: uppercase;
+				.red
+				{
+					color:@red;
+				}
+				.green 
+				{
+					color:@green;
+				}
+			}
+		}
+	}
+}
