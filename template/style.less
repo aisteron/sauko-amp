@@ -1,5 +1,27 @@
 @green: #7ab55c;
 @red: #ff0101;
+body
+{
+	font-family: Arial, sans-serif;
+	margin:0;
+	padding:0;
+}
+h1
+{
+	color:#444;
+	font-size:1.4rem;
+	font-weight: normal;
+	text-indent:0;
+}
+h3 
+{
+	font-size: 100%;
+}
+.greendash
+{
+    border-left: 3px solid #7ab55c;
+    padding-left: 1em;
+}
 .wrap
 {
 	header
@@ -11,19 +33,91 @@
 			background-color: #f5f3f3;
 			height:42px;
 			position: fixed;
+			left: 0;
+			right: 0;
+		    align-items: center;
 
 			.site-name
 			{
 				text-transform: uppercase;
+				font-weight:bold;
 				.red
 				{
 					color:@red;
 				}
 				.green 
 				{
-					color:@green;
+					color: @green;
 				}
 			}
+
+			button 
+			{
+			    align-self: center;
+			    background: url(template/img/hamburger.svg) no-repeat center/30px 24px transparent;
+			    border: 0;
+			    cursor: pointer;
+			    display: none;
+			    height: 40px;
+			    margin: 0;
+			    padding: 0;
+			    width: 40px;
+			    display: inline-block;
+			}
+
+			.phone a
+			{
+				text-decoration: none;
+				color: #333;
+				font-size: 0.85em;
+			}
 		}
+
+		.panel 
+		{
+			padding: 2.2rem 1rem 0;
+		    background: #f9f9f9;
+		    font-size:0.9rem;
+
+		    p 
+		    {
+	    	    padding-bottom: 0.7em;
+		    }
+
+		    .viberLink
+		    {
+		    	color:purple;
+		    }
+		    .waLink
+		    {
+		    	color:@green;
+		    }
+		}
+	}
+
+	.main-content
+	{
+		padding:0 1em;
+		line-height: 150%;
+	    text-indent: 1em;
+	    color: #888;
+
+	    .bread 
+	    {
+	    	p
+	    	{
+	    		margin-top:0;
+	    		text-indent:0;
+	    		font-size:0.9rem;
+	    	}
+	    }
+
+	    .content 
+	    {
+	    	p 
+	    	{
+	    		font-size:0.9rem;
+	    	}
+	    }
 	}
 }

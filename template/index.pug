@@ -10,7 +10,7 @@ head
 	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
 	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-	style(amp-custom) .wrap header .nav{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;background-color:#f5f3f3;height:42px;position:fixed}.wrap header .nav .site-name{text-transform:uppercase}.wrap header .nav .site-name .red{color:#ff0101}.wrap header .nav .site
+	style(amp-custom) body{font-family:Arial,sans-serif;margin:0;padding:0}h1{color:#444;font-size:1.4rem;font-weight:400;text-indent:0}.greendash{border-left:3px solid #7ab55c;padding-left:1em}.wrap header .nav{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;background-color:#f5f3f3;height:42px;position:fixed;left:0;right:0;-ms-flex-align:center;align-items:center}.wrap header .nav .site-name{text-transform:uppercase;font-weight:700}.wrap header .nav .site-name .red{color:#ff0101}.wrap header .nav .site-name .green{color:#7ab55c}.wrap header .nav button{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;background:url(template/img/hamburger.svg) no-repeat center/30px 24px transparent;border:0;cursor:pointer;display:none;height:40px;margin:0;padding:0;width:40px;display:inline-block}.wrap header .nav .phone a{text-decoration:none;color:#333;font-size:.85em}.wrap header .panel{padding:2.2rem 1rem 0;background:#f9f9f9;font-size:.9rem}.wrap header .panel p{padding-bottom:.7em}.wrap header .panel .viberLink{color:purple}.wrap header .panel .waLink{color:#7ab55c}.wrap .main-content{padding:0 1em;line-height:150%;text-indent:1em;color:#888}.wrap .main-content .bread p{margin-top:0;text-indent:0;font-size:.9rem}.wrap .main-content .content p{font-size:.9rem}
 body
 	amp-sidebar(id="sidebar" layout="nodisplay" side="left")
 		ul
@@ -28,4 +28,15 @@ body
 					span.green travel
 				.phone
 					a(href="tel:+375445400925") +375 44 54 00 925
-				button.hamburger(on='tap:sidebar.toggle') menu
+				button.hamburger(on='tap:sidebar.toggle')
+			.panel
+				p Написать в <a href="viber://add?number=%2B375445400925"class="viberLink">Viber</a> или <a class="waLink" href="https://api.whatsapp.com/send?phone=375445400925" >WhatsApp</a>
+		.main-content
+			.bread
+				p Главная
+			h1.entry-header Экскурсии по Беларуси из Минска
+			
+			.content
+				p Я приглашаю Вас отправиться в увлекательное путешествие по Беларуси, познакомиться с ее историей, культурой, достопримечательностями, открыть для себя новые уголки и составить собственное мнение. В этом разделе Вы можете выбрать и забронировать экскурсии по Беларуси из Минска.
+
+				h3.greendash Категории экскурсий:			
