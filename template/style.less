@@ -1,8 +1,9 @@
 @green: #7ab55c;
 @red: #ff0101;
+
 body
 {
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin:0;
 	padding:0;
 }
@@ -16,12 +17,75 @@ h1
 h3 
 {
 	font-size: 100%;
+	font-weight:400;
 }
 .greendash
 {
     border-left: 3px solid #7ab55c;
     padding-left: 1em;
 }
+
+
+.list-group {
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+
+	.list-group-item
+	{
+		position: relative;
+		display: block;
+		padding: .75rem 1.25rem;
+		margin-bottom: -1px;
+		background-color: #fff;
+		border: 1px solid rgba(0,0,0,.125);
+
+		&:first-child {
+		border-top-left-radius: .25rem;
+		border-top-right-radius: .25rem;
+		}
+		&:last-child {
+	    margin-bottom: 0;
+	    border-bottom-right-radius: .25rem;
+	    border-bottom-left-radius: .25rem;
+		}
+
+		&:hover
+		{
+			background-color: #fafafa;
+		}
+	}
+
+}
+
+.list-group-flush:first-child .list-group-item:first-child {
+    border-top: 0;
+}
+
+.list-group-flush .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+
 .wrap
 {
 	header
@@ -29,13 +93,14 @@ h3
 		.nav 
 		{
 			display:flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			background-color: #f5f3f3;
 			height:42px;
 			position: fixed;
 			left: 0;
 			right: 0;
 		    align-items: center;
+		    padding: 0 1em;
 
 			.site-name
 			{
@@ -117,6 +182,90 @@ h3
 	    	p 
 	    	{
 	    		font-size:0.9rem;
+	    	}
+
+	    	.exc_pop
+	    	{
+	    		display: flex;
+	    		flex-wrap:wrap;
+
+	    		.item 
+	    		{
+					background-color: #eee;
+					width:180px;
+					margin:0 1em 1em 0;
+					border-bottom-right-radius: 6px;
+    				border-bottom-left-radius: 6px;
+					
+					amp-img 
+					{
+						display:inherit;
+					}
+
+					label 
+					{
+						p 
+						{
+							margin:0;
+							padding:0;
+							text-indent:0.4rem;
+						}
+					}
+	    		}
+	    	} // популярные экскурсии на главной
+
+	    	.exc_list
+	    	{
+	    		.item 
+	    		{
+	    			display:flex;
+	    			justify-content: space-between;
+	    			margin-bottom: 1em;
+
+	    			&:hover
+	    			{
+	    				background-color: #fafafa;
+	    			}
+
+	    			amp-img
+	    			{
+	    				border-radius:4px;
+	    				min-width:93px;
+
+	    			}
+
+    				.left
+    				{
+    					flex-grow:1;
+						padding-left:1em;
+						align-self: center;
+						p 
+						{
+							margin:0;
+							padding:0;
+							text-indent:0;
+							&:nth-child(1)
+							{
+								color:#333;
+								font-weight: 400;
+							}
+							
+						}
+    				}
+
+    				.right
+    				{
+						align-self:center;
+						min-width:40px;
+						p 
+						{
+							color:#333;
+							font-weight: 400;
+
+						}
+    				}
+
+	    		}
 	    	}
 	    }
 	}
